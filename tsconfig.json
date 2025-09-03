@@ -35,8 +35,7 @@
     // パス設定（各Lessonで相対パスを使いやすくするため）
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"],
-      "@lesson-*": ["./lesson-*/src/*"]
+      "@/*": ["./src/*"]
     }
   },
   
@@ -59,24 +58,6 @@
   // プロジェクト参照（各Lessonを個別プロジェクトとして管理）
   "references": [
     { "path": "./lesson-01" },
-    { "path": "./lesson-02" },
-    { "path": "./lesson-03" },
-    { "path": "./lesson-04" },
-    { "path": "./lesson-05" },
-    { "path": "./lesson-06" },
-    { "path": "./lesson-07" },
-    { "path": "./lesson-08" },
-    { "path": "./lesson-09" },
-    { "path": "./lesson-10" },
-    { "path": "./lesson-11" },
-    { "path": "./lesson-12" },
-    { "path": "./lesson-13" },
-    { "path": "./lesson-14" },
-    { "path": "./lesson-15" },
-    { "path": "./lesson-16" },
-    { "path": "./lesson-17" },
-    { "path": "./lesson-18" },
-    { "path": "./lesson-19" },
-    { "path": "./lesson-20" }
+    { "path": "./lesson-02" }
   ]
 }

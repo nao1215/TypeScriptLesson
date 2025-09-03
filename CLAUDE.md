@@ -95,8 +95,27 @@ lesson-XX/
 3. 最終的にNext.jsで複数の実践的なWebアプリケーションを完成させる
 
 ## 進捗状況
-- [ ] 作業計画策定
-- [ ] プロジェクト基盤構築
-- [ ] Lesson 01-10 実装
-- [ ] Lesson 11-20 実装
+- [x] 作業計画策定（完了）
+- [x] プロジェクト基盤構築（完了）
+- [x] Lesson 01-02 実装（既存）
+- [x] Lesson 03-10 実装（完了）
+  - [x] Lesson 03: 数値型
+  - [x] Lesson 04: 文字列型
+  - [x] Lesson 05: 真偽値型
+  - [x] Lesson 06: null と undefined
+  - [x] Lesson 07: 配列型
+  - [x] Lesson 08: タプル型
+  - [x] Lesson 09: enum型
+  - [x] Lesson 10: any型とunknown型
+- [ ] Lesson 11-20 実装（次回作業予定）
+  - [ ] Lesson 11: 関数の基礎
+  - [ ] Lesson 12: 関数の型
+  - [ ] Lesson 13: オプショナル引数
+  - [ ] Lesson 14: デフォルト引数
+  - [ ] Lesson 15: 可変長引数
+  - [ ] Lesson 16: オブジェクト型
+  - [ ] Lesson 17: 型エイリアス
+  - [ ] Lesson 18: リテラル型
+  - [ ] Lesson 19: ユニオン型
+  - [ ] Lesson 20: 型アサーション
 - [ ] ...続く
