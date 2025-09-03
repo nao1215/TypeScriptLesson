@@ -1,0 +1,29 @@
+{
+  "name": "@typescript-lesson/lesson-01",
+  "version": "1.0.0",
+  "description": "Lesson 01: Hello World - TypeScriptの第一歩",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "exercise": "ts-node src/exercise.ts",
+    "solution": "ts-node src/solution.ts",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "typescript",
+    "tutorial",
+    "hello-world",
+    "basics"
+  ],
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.11.17",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5"
+  }
+}

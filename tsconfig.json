@@ -1,0 +1,82 @@
+{
+  "compilerOptions": {
+    // 基本的なコンパイル設定
+    "target": "ES2022",                    // コンパイル先のECMAScriptバージョン
+    "module": "CommonJS",                  // モジュールシステム
+    "lib": ["ES2022", "DOM"],             // 使用するライブラリ
+    "outDir": "./dist",                   // 出力ディレクトリ
+    "rootDir": "./",                      // ルートディレクトリ
+    
+    // 型チェックの厳密さ
+    "strict": true,                       // すべての厳密な型チェックを有効
+    "noImplicitAny": true,               // 暗黙のany型を禁止
+    "strictNullChecks": true,            // null/undefinedの厳密チェック
+    "strictFunctionTypes": true,         // 関数型の厳密チェック
+    "noImplicitReturns": true,          // 戻り値のない関数を禁止
+    "noImplicitThis": true,             // 暗黙のthisを禁止
+    "noUnusedLocals": true,             // 未使用のローカル変数を検出
+    "noUnusedParameters": true,         // 未使用のパラメータを検出
+    
+    // モジュール解決
+    "moduleResolution": "node",          // Node.js形式のモジュール解決
+    "esModuleInterop": true,            // CommonJSとESModuleの相互運用
+    "allowSyntheticDefaultImports": true, // デフォルトインポートを許可
+    "resolveJsonModule": true,          // JSONモジュールの読み込み
+    "declaration": true,                 // 型定義ファイル(.d.ts)を生成
+    "declarationMap": true,             // 型定義ファイルのソースマップ
+    "sourceMap": true,                  // ソースマップを生成
+    
+    // その他の設定
+    "skipLibCheck": true,               // ライブラリの型チェックをスキップ
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字を統一
+    "experimentalDecorators": true,     // デコレータを有効化
+    "emitDecoratorMetadata": true,      // デコレータのメタデータを出力
+    
+    // パス設定（各Lessonで相対パスを使いやすくするため）
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@lesson-*": ["./lesson-*/src/*"]
+    }
+  },
+  
+  // コンパイル対象
+  "include": [
+    "lesson-*/src/**/*",
+    "lesson-*/tests/**/*",
+    "scripts/**/*",
+    "*.ts"
+  ],
+  
+  // コンパイル除外
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ],
+  
+  // プロジェクト参照（各Lessonを個別プロジェクトとして管理）
+  "references": [
+    { "path": "./lesson-01" },
+    { "path": "./lesson-02" },
+    { "path": "./lesson-03" },
+    { "path": "./lesson-04" },
+    { "path": "./lesson-05" },
+    { "path": "./lesson-06" },
+    { "path": "./lesson-07" },
+    { "path": "./lesson-08" },
+    { "path": "./lesson-09" },
+    { "path": "./lesson-10" },
+    { "path": "./lesson-11" },
+    { "path": "./lesson-12" },
+    { "path": "./lesson-13" },
+    { "path": "./lesson-14" },
+    { "path": "./lesson-15" },
+    { "path": "./lesson-16" },
+    { "path": "./lesson-17" },
+    { "path": "./lesson-18" },
+    { "path": "./lesson-19" },
+    { "path": "./lesson-20" }
+  ]
+}

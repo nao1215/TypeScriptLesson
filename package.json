@@ -1,0 +1,66 @@
+{
+  "name": "typescript-lesson",
+  "version": "1.0.0",
+  "description": "TypeScript初心者向け100Lesson - TypeScriptを基礎から学んでNext.jsアプリまで作る学習コース",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "build:all": "npm run build && node scripts/build-all-lessons.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "clean": "rimraf dist **/**/dist **/**/node_modules/.cache",
+    "dev": "concurrently \"npm run test:watch\" \"npm run lint\"",
+    "setup": "npm install && npm run build",
+    "lesson": "node scripts/run-lesson.js"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "tutorial",
+    "learning",
+    "nextjs",
+    "react",
+    "programming",
+    "教育",
+    "プログラミング学習"
+  ],
+  "author": "TypeScript Learning Course",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nao1215/TypeScriptLesson.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nao1215/TypeScriptLesson/issues"
+  },
+  "homepage": "https://github.com/nao1215/TypeScriptLesson#readme"
+}
