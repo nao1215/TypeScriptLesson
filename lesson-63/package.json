@@ -1,0 +1,80 @@
+{
+  "name": "lesson-63-debugging-techniques",
+  "version": "1.0.0",
+  "description": "TypeScript Lesson 63: デバッグ技術 (Debugging Techniques)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "clean": "rimraf dist",
+    "debug": "node --inspect-brk -r ts-node/register src/index.ts",
+    "debug:browser": "npm run build && node --inspect dist/index.js",
+    "exercise": "ts-node src/exercise.ts",
+    "solution": "ts-node src/solution.ts",
+    "demo": "ts-node -e \"import('./src/index').then(m => m.demonstrateDebugging())\"",
+    "analyze:performance": "npm run build && node --prof dist/index.js",
+    "debug:memory": "node --expose-gc -r ts-node/register src/index.ts",
+    "debug:network": "cross-env DEBUG_NETWORK=true npm run dev"
+  },
+  "keywords": [
+    "typescript",
+    "debugging",
+    "performance",
+    "error-tracking",
+    "monitoring",
+    "devtools",
+    "profiling",
+    "memory-leak",
+    "network-debugging"
+  ],
+  "author": "TypeScript Lesson Series",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "winston": "^3.10.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.ts"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/*.d.ts"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
